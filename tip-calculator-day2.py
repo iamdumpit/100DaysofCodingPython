@@ -10,3 +10,4 @@ Percentage = 1+Tip/100
 # Round off Total value in 2 decimal places
 TotalValue = round((Bill / Split) * Percentage,2)
 print("Each person should pay: ${0}".format(TotalValue))
+print("Thank you!")
