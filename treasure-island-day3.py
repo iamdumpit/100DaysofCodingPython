@@ -34,7 +34,7 @@ else:
         if color.lower() == 'blue':
             print("Eaten by beasts.\nGame Over")
         if color.lower() == 'yellow':
-            print("You Win!")
+            print("You found the treasure! You Win!")
         else:
             print("Game Over.")
     else:
