@@ -55,7 +55,7 @@ def init():
     chosen_word = random.choice(word).upper()
 
 
-    sleep(2)
+    sleep(5)
     clear()
 
     # Choose difficulty easy = 25%, medium = 50%, hard = 75%, geek = 100%
