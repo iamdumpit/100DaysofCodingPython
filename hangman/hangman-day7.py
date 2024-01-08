@@ -66,7 +66,7 @@ def init():
     else:
         clear()
         # chosen_word = "TESTINGONLY"
-        print(f"**** FOR DEBUGGING ONLY: Your word is = {chosen_word} ****")
+        # print(f"**** FOR DEBUGGING ONLY: Your word is = {chosen_word} ****")
 
         # Get index and char value in chosen_word, make sure it is not space or a number
         replace_char_in_word = [i for i, i in enumerate(chosen_word) if not chosen_word.isspace() or chosen_word.isdigit()]
