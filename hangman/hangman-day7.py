@@ -51,10 +51,6 @@ def init():
     # Display welcome message
     display_logo()
 
-    # Open text file to retrieve a random word
-    word = open("word_list.txt", "r").read().split()
-    chosen_word = random.choice(word).upper()
-
     sleep(3)
     clear()
 
@@ -63,6 +59,10 @@ def init():
 
     while True:
         try:
+            # Open text file to retrieve a random word
+            word = open("word_list.txt", "r").read().split()
+            chosen_word = random.choice(word).upper()
+
             choice_diff = int(input("Choose your difficulty. Type 0 = Easy, 1 = Medium, 2 = Hard, 3 = Geek Mode, "
                                     "4 to exit game!\n"))
             if len(str(choice_diff)) > 1:
