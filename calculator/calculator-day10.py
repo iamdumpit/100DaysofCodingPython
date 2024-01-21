@@ -7,7 +7,7 @@ class Calculator:
         self.initial_num = initial_num
         self.next_num = next_num
         self.operator_val = operator_val
-        self.total_num = self.initial_num
+        self.total_num = 0
 
     def clear_screen(self):
         # for windows
