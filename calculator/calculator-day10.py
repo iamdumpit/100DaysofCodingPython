@@ -1,5 +1,6 @@
 from logo import print_logo
 from os import system, name
+from time import sleep
 
 class Calculator:
 
@@ -9,7 +10,8 @@ class Calculator:
         self.operator_val = operator_val
         self.total_num = 0
 
-    def clear_screen(self):
+    @classmethod
+    def clear_screen(cls):
         # for windows
         if name == 'nt':
             _ = system('cls')
@@ -53,6 +55,8 @@ def init():
     }
 
     print_logo()
+    sleep(1)
+    Calculator.clear_screen()
     num1 = float(input("What's the first number?: "))
 
     continue_calc = True
@@ -70,7 +74,7 @@ def init():
             num1 = calculator.total_num
         else:
             continue_calc = False
-            calculator.clear_screen()
+            Calculator.clear_screen()
             init()
 
     return 0
